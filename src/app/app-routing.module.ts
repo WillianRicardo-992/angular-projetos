@@ -4,13 +4,15 @@ import { FirstComponentComponent } from "./components/first-component/first-comp
 import { ListRenderComponent } from "./components/list-render/list-render.component";
 import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
 import { PipesComponent } from "./components/pipes/pipes.component";
+import { ItemDetailComponent } from "./components/item-detail/item-detail.component";
 
 
 const routes: Routes = [
     {path: '', component: FirstComponentComponent},
     {path: 'list', component: ListRenderComponent},
     {path: 'text', component: TwoWayBindingComponent},
-    {path: 'pipes', component: PipesComponent}
+    {path: 'pipes', component: PipesComponent},
+    {path: 'list/:id', component: ItemDetailComponent}
 ]
 
 @NgModule({
